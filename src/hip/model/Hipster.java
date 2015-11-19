@@ -25,6 +25,22 @@ public class Hipster
 	
 	private void setupBooks()
 	{
+		Book firstBook, secoundBook, thirdBook;
+		firstBook = new Book();
+		firstBook.setAuthor("Jared Kerr");
+		firstBook.setTitle("FortyFive Reasons \"Code Age\" is the worst book ever");
+		firstBook.setSubject("FACT");
+		firstBook.setPageCount(45);
+		firstBook.setPrice(13.458774);
+		
+		secoundBook = new Book();
+		secoundBook.setAuthor("Jared Kerr");
+		secoundBook.setTitle("Reasons why I will never Round Money");
+		secoundBook.setSubject("FACT");
+		secoundBook.setPageCount(45);
+		secoundBook.setPrice(47.458774);
+		
+		thirdBook = new Book(300, "Rick Riordan", "The Titan's Curse", "Science Fiction", 25.99);
 		
 	}
 	
