@@ -1,20 +1,18 @@
 package hip.model;
 
-import java.awt.print.Book;
-
 public class Hipster
 {
 	private String name;
 	private String[] hipsterPhrases;
-	//private Book[] hipsterBooks;
+	private Book[] hipsterBooks;
 	
 	public Hipster()
 	{
 		this.name = "";
 		this.hipsterPhrases = new String[4];
-		//this.hipsterBooks = new Book[3];
+		this.hipsterBooks = new Book[3];
 		setupArray();
-		//setupBooks();
+		setupBooks();
 	}
 	
 	private void setupArray()
