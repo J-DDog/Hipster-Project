@@ -4,6 +4,16 @@ public class Hipster
 {
 	private String name;
 	private String[] hipsterPhrases;
+	public Book[] getHipsterBooks()
+	{
+		return hipsterBooks;
+	}
+
+	public void setHipsterBooks(Book[] hipsterBooks)
+	{
+		this.hipsterBooks = hipsterBooks;
+	}
+
 	private Book[] hipsterBooks;
 	
 	public Hipster()
@@ -11,6 +21,7 @@ public class Hipster
 		this.name = "";
 		this.hipsterPhrases = new String[4];
 		this.hipsterBooks = new Book[3];
+		
 		setupArray();
 		setupBooks();
 	}
@@ -37,15 +48,14 @@ public class Hipster
 		secoundBook.setAuthor("Jared Kerr");
 		secoundBook.setTitle("Reasons why I will never Round Money");
 		secoundBook.setSubject("FACT");
-		secoundBook.setPageCount(45);
-		secoundBook.setPrice(47.458774);
+		secoundBook.setPageCount(2);
+		secoundBook.setPrice(1.458774);
 		
 		thirdBook = new Book(300, "Rick Riordan", "The Titan's Curse", "Science Fiction", 25.99);
 		
-	}
-	
-	public Hipster(String name)
-	{
+		hipsterBooks[0] = firstBook;
+		hipsterBooks[1] = secoundBook;
+		hipsterBooks[2] = thirdBook;
 		
 	}
 

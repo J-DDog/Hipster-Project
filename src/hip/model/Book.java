@@ -11,7 +11,7 @@ public class Book
 	public Book()
 	{
 		this.pageCount = 0;
-		this.author= "";
+		this.author = "";
 		this.subject = "";
 		this.title = "";
 		this.price = -0.00;	
