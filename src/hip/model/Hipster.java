@@ -1,20 +1,23 @@
 package hip.model;
 
-import java.awt.print.Book;
-
 public class Hipster
 {
 	private String name;
 	private String[] hipsterPhrases;
-	//private Book[] hipsterBooks;
+
+
+	
+
+	private Book[] hipsterBooks;
 	
 	public Hipster()
 	{
 		this.name = "";
 		this.hipsterPhrases = new String[4];
-		//this.hipsterBooks = new Book[3];
+		this.hipsterBooks = new Book[3];
+		
 		setupArray();
-		//setupBooks();
+		setupBooks();
 	}
 	
 	private void setupArray()
@@ -27,11 +30,26 @@ public class Hipster
 	
 	private void setupBooks()
 	{
+		Book firstBook, secoundBook, thirdBook;
+		firstBook = new Book();
+		firstBook.setAuthor("Jared Kerr");
+		firstBook.setTitle("FortyFive Reasons \"Code Age\" is the worst book ever");
+		firstBook.setSubject("FACT");
+		firstBook.setPageCount(45);
+		firstBook.setPrice(13.458774);
 		
-	}
-	
-	public Hipster(String name)
-	{
+		secoundBook = new Book();
+		secoundBook.setAuthor("Jared Kerr");
+		secoundBook.setTitle("Reasons why I will never Round Money");
+		secoundBook.setSubject("FACT");
+		secoundBook.setPageCount(2);
+		secoundBook.setPrice(1.458774);
+		
+		thirdBook = new Book(300, "Rick Riordan", "The Titan's Curse", "Science Fiction", 25.99);
+		
+		hipsterBooks[0] = firstBook;
+		hipsterBooks[1] = secoundBook;
+		hipsterBooks[2] = thirdBook;
 		
 	}
 
@@ -45,6 +63,11 @@ public class Hipster
 		this.name = name;
 	}
 
+	
+	public void setHipsterBooks(Book[] hipsterBooks)
+	{
+		this.hipsterBooks = hipsterBooks;
+	}
 	public String[] getHipsterPhrases()
 	{
 		return hipsterPhrases;
@@ -55,10 +78,10 @@ public class Hipster
 		this.hipsterPhrases = hipsterPhrases;
 	}
 
-//	public Book[] getHipsterBooks()
-//	{
-//		return hipsterBooks;
-//	}
+	public Book[] getHipsterBooks()
+	{
+		return hipsterBooks;
+	}
 
 //	public void setHipsterBooks(Book[] hipsterBooks)
 //	{
