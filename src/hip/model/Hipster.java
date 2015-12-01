@@ -4,15 +4,9 @@ public class Hipster
 {
 	private String name;
 	private String[] hipsterPhrases;
-	public Book[] getHipsterBooks()
-	{
-		return hipsterBooks;
-	}
 
-	public void setHipsterBooks(Book[] hipsterBooks)
-	{
-		this.hipsterBooks = hipsterBooks;
-	}
+
+	
 
 	private Book[] hipsterBooks;
 	
@@ -69,6 +63,11 @@ public class Hipster
 		this.name = name;
 	}
 
+	
+	public void setHipsterBooks(Book[] hipsterBooks)
+	{
+		this.hipsterBooks = hipsterBooks;
+	}
 	public String[] getHipsterPhrases()
 	{
 		return hipsterPhrases;
@@ -79,10 +78,10 @@ public class Hipster
 		this.hipsterPhrases = hipsterPhrases;
 	}
 
-//	public Book[] getHipsterBooks()
-//	{
-//		return hipsterBooks;
-//	}
+	public Book[] getHipsterBooks()
+	{
+		return hipsterBooks;
+	}
 
 //	public void setHipsterBooks(Book[] hipsterBooks)
 //	{
