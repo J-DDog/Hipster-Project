@@ -13,7 +13,7 @@ public class HipsterFrame extends JFrame
 	
 	private HipsterFrame(){}
 	
-	public HipsterFrame(HipsterController baseContoller)
+	public HipsterFrame(HipsterController baseController)
 	{
 		this.baseController = baseController;
 		mainPanel = new HipsterPanel(baseController);
